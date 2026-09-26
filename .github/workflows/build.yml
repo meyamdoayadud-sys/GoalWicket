@@ -10,16 +10,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v3
-      - name: Create gradlew if missing
-        run: |
-          if [ ! -f "./gradlew" ]; then
-            gradle wrapper
-          fi
-          chmod +x gradlew
+        with:
+          gradle-version: '8.7'
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: GoalWicket-APK
           path: app/build/outputs/apk/debug/*.apk
+        
