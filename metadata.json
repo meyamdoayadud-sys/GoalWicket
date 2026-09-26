@@ -1,0 +1,6 @@
+{
+  "name": "GoalWicket",
+  "description": "Football + Cricket Live Scores with Built-in Gemini AI Assistant for live predictions and lineups in Bangla & English",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
