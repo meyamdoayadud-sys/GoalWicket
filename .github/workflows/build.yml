@@ -25,26 +25,8 @@ jobs:
             "client": [
               {
                 "client_info": {
-                  "mobilesdk_app_id": "1:1234567890:android:abcdef123456",
-                  "android_client_info": {"package_name": "com.example.goalwicket"}
-                },
-                "oauth_client": [],
-                "api_key": [{"current_key": "dummy"}],
-                "services": {}
-              },
-              {
-                "client_info": {
-                  "mobilesdk_app_id": "1:1234567890:android:abcdef123457",
-                  "android_client_info": {"package_name": "com.goalwicket"}
-                },
-                "oauth_client": [],
-                "api_key": [{"current_key": "dummy"}],
-                "services": {}
-              },
-              {
-                "client_info": {
-                  "mobilesdk_app_id": "1:1234567890:android:abcdef123458",
-                  "android_client_info": {"package_name": "com.goalwicket.app"}
+                  "mobilesdk_app_id": "1:1234567890:android:abcdef",
+                  "android_client_info": {"package_name": "com.aistudio.goalwicket.live"}
                 },
                 "oauth_client": [],
                 "api_key": [{"current_key": "dummy"}],
