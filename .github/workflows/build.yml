@@ -10,12 +10,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v3
-      - name: Build Debug APK
-        run: |
-          chmod +x gradlew
-           ./gradlew assembleDebug --stacktrace
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - run: chmod +x gradlew
+      - run: ./gradlew assembleDebug --stacktrace
+      - uses: actions/upload-artifact@v4
         with:
           name: GoalWicket-APK
           path: app/build/outputs/apk/debug/*.apk
